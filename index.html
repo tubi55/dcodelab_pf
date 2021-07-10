@@ -9,8 +9,10 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script defer src="myYoutube.js"></script>
     <script defer src="main.js"></script>  
+    <script defer src="form.js"></script>
     <script>
         $("documnet").ready(function(){
             $("#vidGallery").myYoutube({
@@ -71,6 +73,14 @@
 
         <section id="contact">
             <h2>Contact me</h2>
+            <form id="contact-form">
+                <input type="hidden" name="contact_number">
+                <input type="text" required placeholder="이름을 입력하세요" name="to_name">
+                <input type="text" required placeholder="연락처를 입력하세요" name="contact">
+                <input type="text" required placeholder="이메일을 입력하세요" name="from_name">
+                <textarea required placeholder="문의내용을 입력하세요" name="message_html" cols="30" rows="5"></textarea>
+                <input type="submit" value="문의하기">
+            </form>
         </section>
     </main>
  
