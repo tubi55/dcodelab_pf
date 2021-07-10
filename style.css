@@ -153,5 +153,33 @@ main section:nth-of-type(4) {
     display: none;
 }
 
+/* mobile */
+@media screen and (max-width: 739px){
+    body {
+        padding: 0px;
+    }
+    header ul li {
+        font-size: 16px;
+    }
+    main section {
+        padding: 10vh 8vw;
+    }
+    main section h2 {
+        font-size: 15vw;
+    }
+    main section .info {
+        display: none;
+    }
+    #vidGallery article {
+        width: 32%;
+    }
+    #vidGallery article:nth-of-type(10) {
+        display: none;
+    }
+    #vidGallery article a {
+        height: 9vh;
+    }
+}
+
 
 
