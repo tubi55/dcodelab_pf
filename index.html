@@ -8,8 +8,17 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script defer src="myYoutube.js"></script>
     <script defer src="main.js"></script>  
+    <script>
+        $("documnet").ready(function(){
+            $("#vidGallery").myYoutube({
+                key : "AIzaSyBZMJA5tUTbNqE-rTkomkwJuQBKMs1HvEA",
+                playList : "PLCLKoygJfCLo08VXJ3EHeVdTl_TSkVII8"             
+            });
+        });
+    </script>
 </head>
 <body>
 
@@ -44,6 +53,20 @@
 
         <section id="portfolio">
             <h2>Portfolio</h2>
+            <div id="vidGallery">
+                <!--
+                <article>
+                    <a href="" class="pic con">
+                        유튜브 썸네일 이미지 및 링크
+                    </a>
+                    <div class="con">
+                        <h2>유튜브 제목</h2>
+                        <p>유튜브 설명글</p>
+                        <span>유튜브 업로드 날짜</span>
+                    </div>
+                </article>
+                -->
+            </div>
         </section>
 
         <section id="contact">
