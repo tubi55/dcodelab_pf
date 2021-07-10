@@ -92,7 +92,30 @@ main section h2 {
     width: 100%;
     font: normal 6vw/1 "lato";
     color: #fff;
+    margin-bottom: 3vh;
+}
+main section h3 {
+    width: 100%; 
+    font: bold 1.2vw/1 "lato";
+    color: #aaa;
+    letter-spacing: 0.8vw;
     margin-bottom: 5vh;
+    padding-left: 1.2vw;
+    text-indent: -0.5vw;
+}
+main section ul li {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #bbb;
+}
+main section ul li strong {
+    display: block;
+    color: #fff;
+}
+main section .info {
+    font-size: 18px;
+    width: 60%;
+    color: #bbb;
 }
 
 /* 3d cube */
